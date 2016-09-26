@@ -1,9 +1,27 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        background: <%= @color %>
+      }
+      p {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        padding-top: 40px;
+        font-weight: bolder;
+        font-size: 2em;
+      }
+      form {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
   <body>
   
     <p>
-      <%= message %>
+      <%= @message %>
     </p>
     
     <form>
